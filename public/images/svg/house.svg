@@ -1,0 +1,40 @@
+<svg width="123" height="118" viewBox="0 0 123 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 17">
+<g id="Group 3">
+<mask id="mask0_7_34" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="22" width="91" height="94">
+<path id="Clip 2" fill-rule="evenodd" clip-rule="evenodd" d="M16.3621 58.2792V115.891H41.3419V75.8804H81.3057V115.891H106.285V58.2792L61.3233 22.271L16.3621 58.2792Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_7_34)">
+<path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M9.80637 122.454H112.842V14.3027H9.80637V122.454Z" stroke="#6C301E" stroke-width="2.75104"/>
+</g>
+</g>
+<g id="Group 6">
+<mask id="mask1_7_34" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="16" y="22" width="91" height="94">
+<path id="Clip 5" fill-rule="evenodd" clip-rule="evenodd" d="M16.3629 58.2795V115.891H41.3418V75.8804H81.3065V115.891H106.285V58.2795L61.3242 22.2704L16.3629 58.2795Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_7_34)">
+<path id="Stroke 4" fill-rule="evenodd" clip-rule="evenodd" d="M-2662.25 2587.75H2210.4V-2147.79H-2662.25V2587.75Z" stroke="#6C301E" stroke-width="2.75104"/>
+</g>
+</g>
+<path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd" d="M106.441 116.047H81.3762V76.0728H41.2721V116.047H16.2071V58.4875L61.3241 22.5111L106.441 58.4875V116.047Z" stroke="#607D8B" stroke-width="2.75104"/>
+<g id="Group 10">
+<mask id="mask2_7_34" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="122" height="49">
+<path id="Clip 9" fill-rule="evenodd" clip-rule="evenodd" d="M31.0027 24.8066V10.721H10.9725V40.9045L0.957321 48.9199H121.14L61.0483 0.660034L31.0027 24.8066Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_7_34)">
+<path id="Stroke 8" fill-rule="evenodd" clip-rule="evenodd" d="M-0.607254 54.0721H122.705V-0.911987H-0.607254V54.0721Z" stroke="#6C301E" stroke-width="2.75104"/>
+</g>
+</g>
+<g id="Group 13">
+<mask id="mask3_7_34" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="122" height="49">
+<path id="Clip 12" fill-rule="evenodd" clip-rule="evenodd" d="M31.0029 24.806V10.7212H10.9728V40.9041L0.957245 48.9202H121.14L61.0489 0.659668L31.0029 24.806Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_7_34)">
+<path id="Stroke 11" fill-rule="evenodd" clip-rule="evenodd" d="M-2669.04 2602.67H2215.26V-2160.56H-2669.04V2602.67Z" stroke="#CFD8DC" stroke-width="2.75104"/>
+</g>
+</g>
+<path id="Stroke 14" d="M121.297 48.9211L61.3241 1.05298L31.3378 25.0029V11.0321H11.3469V40.9693L1.35144 48.9211" stroke="#607D8B" stroke-width="2.75104"/>
+<path id="Stroke 15" fill-rule="evenodd" clip-rule="evenodd" d="M49.2196 116.046H73.9789V83.034H49.2196V116.046Z" fill="#6C301E"/>
+<path id="Stroke 16" fill-rule="evenodd" clip-rule="evenodd" d="M26.1108 28.8514L16.2071 36.8165V15.9086H26.1108V28.8514Z" fill="#6C301E"/>
+</g>
+</svg>

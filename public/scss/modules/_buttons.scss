@@ -1,0 +1,174 @@
+// Bootstrap Button Overwrite
+button {
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.btn {
+    border: none;
+}
+
+.btn {
+    font-family: $primaryFont;
+    font-size: 0.875rem;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: 1px solid;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: 0.4s all;
+
+    &:focus,
+    &:hover {
+        box-shadow: none;
+        outline: none;
+        color: inherit;
+    }
+
+    &.btn-custom-small {
+        font-size: 0.75rem;
+        padding: 8px 24px;
+    }
+
+    &.btn-custom-large {
+        font-size: 1rem;
+        padding: 12px 36px;
+    }
+
+    &.btn-custom-mid {
+        padding: 10px 25px;
+    }
+
+    &.btn-primary {
+        background-color: $primaryColor;
+        color: $whitey;
+        border-color: $primaryColor;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $primaryColor;
+            color: $primaryColor;
+
+            .btn-wrap {
+                i {
+                    color: $primaryColor;
+                }
+            }
+        }
+
+        &-ghost {
+            background-color: transparent;
+            border-color: $primaryColor;
+            color: $primaryColor;
+
+            &:hover {
+                background-color: $primaryColor;
+                color: $whitey;
+                border-color: $primaryColor;
+            }
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $secondaryColor;
+        color: $whitey;
+        border-color: $secondaryColor;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $secondaryColor;
+            color: $secondaryColor;
+        }
+
+        &-ghost {
+            background-color: transparent;
+            border-color: $secondaryColor;
+            color: $secondaryColor;
+
+            &:hover {
+                background-color: $secondaryColor;
+                color: $whitey;
+                border-color: $secondaryColor;
+            }
+        }
+    }
+
+    &.btn-whitey {
+        background-color: $whitey;
+        color: $black;
+        border-color: $whitey;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $whitey;
+            color: $whitey;
+        }
+
+        &-ghost {
+            background-color: transparent;
+            border-color: $whitey;
+            color: $whitey;
+
+            &:hover {
+                background-color: $whitey;
+                color: $black;
+                border-color: $whitey;
+            }
+        }
+    }
+
+    &.btn-blackie {
+        background-color: $black;
+        color: $whitey;
+        border-color: $black;
+
+        &:hover {
+            background-color: transparent;
+            border-color: $black;
+            color: $black;
+        }
+
+        &-ghost {
+            background-color: transparent;
+            border-color: $black;
+            color: $black;
+
+            &:hover {
+                background-color: $black;
+                color: $whitey;
+                border-color: $black;
+            }
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            margin: 0;
+            padding: 0;
+        }
+
+        i {
+            font-size: 0.75rem;
+            transition: 0.5s ease-in-out 0.1s;
+        }
+    }
+
+    &:hover {
+        .btn-wrap {
+            i {
+                transform: translateX(10px);
+            }
+        }
+    }
+}

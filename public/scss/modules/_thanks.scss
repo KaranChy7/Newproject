@@ -1,0 +1,68 @@
+.thanks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #272727;
+    position: relative;
+    height: 100dvh;
+
+    .icon {
+        width: 100%;
+
+    }
+
+    .message {
+        display: inline-block;
+        margin-top: 30px;
+
+        p {
+            font-size: 16px;
+            word-spacing: 0.05em;
+            color: $secondaryColor;
+            padding: 20px 0;
+        }
+    }
+
+    .redirect {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+        background-color: $primaryColor;
+        border: 1px solid $primaryColor;
+        transition: 0.3s ease-in-out;
+        padding: 10px;
+
+        i {
+            color: $whitey;
+            padding-right: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        h5 {
+            color: $whitey;
+            font-weight: 500;
+            font-size: 18px;
+            word-spacing: 0.05em;
+            margin-bottom: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            text-decoration: none;
+            background-color: transparent;
+
+            i {
+                color: $primaryColor;
+            }
+
+            h5 {
+                color: $primaryColor;
+            }
+        }
+    }
+}

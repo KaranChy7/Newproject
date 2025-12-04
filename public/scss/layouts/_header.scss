@@ -1,0 +1,344 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: auto;
+    overflow: visible;
+    background: transparent;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 0;
+
+        .navbar-collapse {
+            justify-content: flex-end;
+
+            .navbar-nav {
+                width: 100%;
+                align-items: center;
+
+                .nav-item {
+                    .nav-link {
+                        padding: 0;
+                        margin: 5px 10px;
+                        font-family: $secondaryFont;
+                        font-size: 0.9375rem;
+                        font-weight: 600;
+                        color: $lgrey;
+                        text-transform: capitalize;
+                        transition: 0.5s ease-in-out;
+                    }
+
+
+                    &.active,
+                    &:hover {
+                        .nav-link {
+                            color: $primaryColor;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-left: auto;
+                    }
+
+                    &:last-child {
+                        margin-left: auto;
+                        margin-right: 40px;
+
+                        a {
+                            color: $whitey;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    &.fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: $primaryColor;
+        z-index: 9999;
+
+        .navbar {
+            padding: 0;
+
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+
+                        &.active,
+                        &:hover {
+                            .nav-link {
+                                color: $secondaryColor;
+                            }
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                            border: 1px solid $whitey;
+                            background-color: $whitey;
+                            transition: 0.3s ease-in-out;
+
+                            a {
+                                color: $dblack;
+                            }
+
+                            .nav-link {
+                                color: $primaryColor;
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:hover {
+                                background-color: transparent;
+
+                                .nav-link {
+                                    color: $primaryColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.main-header {
+        .navbar {
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: $lgrey;
+                        }
+
+                        &.active,
+                        &:hover {
+                            .nav-link {
+                                color: $secondaryColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@include custom_max(992px) {
+    .header {
+        background-color: $primaryColor;
+
+        .navbar-toggler {
+            z-index: 999;
+            position: relative;
+            width: 40px;
+            aspect-ratio: 1/1;
+            border: 2px solid $whitey;
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                fill: $whitey;
+
+                &.burger {
+                    transition: 0.3s ease-in-out;
+                }
+
+                &.cross {
+                    opacity: 0;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s ease-in-out;
+
+                    path {
+                        stroke: $whitey;
+                    }
+                }
+
+            }
+
+            &:focus-within {
+                box-shadow: none;
+                outline: none;
+            }
+
+            &[aria-expanded="true"] {
+                svg {
+
+                    &.burger {
+                        opacity: 0;
+                    }
+
+                    &.cross {
+                        opacity: 1;
+                        top: 50%;
+                    }
+
+                }
+            }
+        }
+
+        .navbar {
+
+            .navbar-collapse {
+                justify-content: center;
+
+                .navbar-nav {
+                    margin: auto;
+                    background-color: $primaryColor;
+
+                    .nav-item {
+                        text-align: center;
+
+                        .nav-link {
+                            padding: 0.9375rem;
+                            padding: 8px 0;
+                            margin: 0;
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+
+                        &:last-child {
+                            display: block;
+                            margin-left: initial;
+                        }
+
+                        &.active,
+                        &:hover {
+                            .nav-link {
+                                color: $secondaryColor;
+                            }
+                        }
+
+                        &:first-child {
+                            margin-left: initial;
+                        }
+
+                        &.btn {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .button {
+                display: none;
+            }
+        }
+
+        &.fixed-header {
+            .navbar {
+                .navbar-collapse {
+                    .navbar-nav {
+                        .nav-item {
+                            margin-bottom: 10px;
+
+                            .nav-link {
+                                padding: 0;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(768px) {
+    .header {
+        position: relative;
+
+        .navbar-toggler {
+            border: 2px solid $whitey;
+
+            svg {
+                fill: $whitey;
+
+                &.cross {
+                    path {
+                        stroke: $whitey;
+                    }
+                }
+            }
+        }
+
+        .navbar {
+            width: 100%;
+
+            .navbar-collapse {
+                .navbar-nav {
+                    background-color: transparent;
+
+                    .nav-item {
+                        .nav-link {
+                            color: $whitey;
+                        }
+
+                        &.btn {
+                            background-color: transparent;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.fixed-header {
+            .navbar-toggler {
+                border: 2px solid $whitey;
+
+                svg {
+                    fill: $whitey;
+
+                    &.cross {
+                        path {
+                            stroke: $whitey;
+                        }
+                    }
+                }
+            }
+
+            .navbar {
+
+                .navbar-collapse {
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                                color: $whitey;
+                            }
+
+                            &.active,
+                            &:hover {
+                                .nav-link {
+                                    color: $secondaryColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

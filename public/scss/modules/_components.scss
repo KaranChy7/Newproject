@@ -1,0 +1,29 @@
+.section {
+    padding: 80px 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+@include custom_max(1200px) {
+    .section {
+        padding: 60px 0;
+    }
+}
+
+@include custom_max(992px) {
+    .section {
+        padding: 45px 0;
+    }
+}
+
+@include custom_max(768px) {
+    .section {
+        padding: 30px 0;
+    }
+}

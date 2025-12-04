@@ -1,0 +1,127 @@
+.service {
+    background-color: rgba($secondaryColor, 0.3);
+
+
+    .main-title {
+
+        h4 {
+            color: $dblack;
+        }
+
+        p {
+            color: $black;
+        }
+    }
+
+    .wrapper {
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px 10px;
+
+
+        .service-block {
+            flex-basis: calc(100% / 4 - 30px);
+            text-align: center;
+            padding: 10px;
+            transition: 0.4s ease-in-out 0.3s box-shadow;
+            border-radius: 12px;
+            text-align: left;
+
+
+            .service-icon {
+                display: block;
+                overflow: hidden;
+                position: relative;
+                padding: 10px;
+                text-align: left;
+
+                img {
+                    height: 60px;
+                    width: 60px;
+
+                }
+            }
+
+
+            .desc {
+                margin-top: 20px;
+                text-align: left;
+
+                h6 {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    color: #37474F;
+                    text-transform: capitalize;
+                    margin-bottom: 15px;
+
+                }
+
+                p {
+                    font-size: 0.9375rem;
+                    line-height: 1.5;
+
+                }
+            }
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 6px 4px, rgba(0, 0, 0, 0.09) 0px 6px 4px, rgba(0, 0, 0, 0.09) 0px 10px 5px, rgba(0, 0, 0, 0.09) 0px 18px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+            }
+        }
+    }
+}
+
+@include custom_max(992px) {
+    .service {
+        .wrapper {
+            .service-block {
+                .desc {
+                    h6 {
+                        font-size: 1.125rem;
+                    }
+
+                    p {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include custom_max(768px) {
+    .service {
+        .wrapper {
+            flex-direction: column;
+            gap: 40px;
+
+            .service-block {
+                width: 100%;
+                border: 1px solid rgba($secondaryColor, 0.4);
+
+                .service-icon {
+                    display: block;
+                    overflow: hidden;
+                    position: relative;
+                    padding: 10px;
+                    text-align: center;
+
+                    img {
+                        height: 60px;
+                        width: 60px;
+
+                    }
+                }
+
+
+                .desc {
+                    text-align: center;
+
+                    h6 {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+}

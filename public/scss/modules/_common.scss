@@ -1,0 +1,143 @@
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    transition: 0.4s all;
+}
+
+.main-title {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8px;
+        height: 100%;
+        background-color: $primaryColor;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: $whitey;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-size: 0.9375rem;
+        line-height: 1.5;
+        color: $lgrey;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .contact-item {
+        display: inline-block;
+
+        h6 {
+            display: block;
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: $whitey;
+            text-transform: capitalize;
+            transition: 0.5s ease-in-out;
+        }
+
+        p {
+            display: inline-block;
+            color: $lgrey;
+            margin-top: 5px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $primaryColor;
+                transition: 0.5s ease-in-out;
+            }
+        }
+
+        &:hover {
+            h6 {
+                color: $primaryColor;
+            }
+
+            p {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.background-attachment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.social-icon-wrap {
+    display: flex;
+    gap: 20px;
+
+    .icon {
+        i {
+            color: $secondaryColor;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:hover {
+            i {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+@include custom_max(992px) {
+    .main-title {
+        margin-bottom: 60px;
+    }
+}
+
+@include custom_max(768px) {
+    .main-title {
+        margin-bottom: 50px;
+
+        h4 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include custom_max(576px) {
+    .main-title {
+        margin-bottom: 40px;
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+    }
+}
